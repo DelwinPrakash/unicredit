@@ -56,11 +56,8 @@ export default function Header() {
           {/* Mobile Menu Button */}
           <button
             type="button"
-            onClick={() => setIsMobileMenuOpen((prev) => {
-              console.log("HI")
-              return !prev;
-            })}
-            className="md:hidden text-slate-600 hover:text-blue-600 focus:outline-none p-2 rounded-md"
+            onClick={() => setIsMobileMenuOpen((prev) => !prev)}
+            className="lg:hidden text-slate-600 hover:text-blue-600 focus:outline-none p-2 rounded-md"
             aria-label="Toggle Menu"
             aria-expanded={isMobileMenuOpen}
           >
@@ -72,8 +69,8 @@ export default function Header() {
           </button>
 
           {/* Desktop Menu */}
-          <nav className="hidden md:block">
-            <ul className="flex space-x-8 items-center">
+          <nav className="hidden lg:block">
+            <ul className="flex lg:space-x-6 xl:space-x-8 items-center">
               <li>
                 <Link
                   href="/"
@@ -143,7 +140,7 @@ export default function Header() {
 
       {/* Mobile Menu Fullscreen Overlay */}
       <div 
-        className={`md:hidden fixed left-0 right-0 top-[80px] h-[calc(100dvh-80px)] bg-white z-50 flex flex-col transition-all duration-300 ease-in-out ${
+        className={`lg:hidden fixed left-0 right-0 top-[80px] h-[calc(100dvh-80px)] bg-white z-50 flex flex-col transition-all duration-300 ease-in-out ${
           isMobileMenuOpen ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4 pointer-events-none"
         }`}
       >
