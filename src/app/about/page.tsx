@@ -61,7 +61,7 @@ export default function About() {
       </section>
 
       {/* Partners Section */}
-      <section className="py-24 bg-slate-50 border-t border-slate-100">
+      {/* <section className="py-24 bg-slate-50 border-t border-slate-100">
         <div className="container mx-auto px-4 text-center max-w-7xl">
           <h4 className="text-blue-600 font-bold uppercase tracking-widest mb-4">Trusted By</h4>
           <h2 className="text-4xl font-extrabold text-slate-900 mb-16 tracking-tight">Our Global Partners</h2>
@@ -73,7 +73,7 @@ export default function About() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
     </>
   );
 }
