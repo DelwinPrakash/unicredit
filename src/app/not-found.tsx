@@ -5,6 +5,7 @@ export const metadata = {
   title: "404 - Page Not Found | Unicredit",
 };
 
+// 404 PAGE
 export default function NotFound() {
   return (
     <>
