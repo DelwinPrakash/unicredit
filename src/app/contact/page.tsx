@@ -1,6 +1,7 @@
 import PageHeader from "../../components/PageHeader";
 import Image from "next/image";
 import { MapPin, Mail, Phone } from "lucide-react";
+import ContactFormWrapper from "./ContactFormWrapper";
 
 export const metadata = {
   title: "Contact Us | Unicredit",
@@ -23,7 +24,7 @@ export default function Contact() {
                 </p>
               </div>
               
-              <form action="/api/contact" method="POST" className="space-y-6">
+              <ContactFormWrapper>
                 <div className="flex flex-col md:flex-row gap-6">
                   <div className="w-full md:w-1/2 group">
                     <label className="block text-xs font-bold text-slate-500 mb-2 tracking-widest uppercase">Name</label>
@@ -42,12 +43,7 @@ export default function Contact() {
                   <label className="block text-xs font-bold text-slate-500 mb-2 tracking-widest uppercase">Message</label>
                   <textarea name="message" required rows={5} className="w-full px-5 py-4 bg-slate-50/50 border border-slate-200 rounded-xl focus:outline-none focus:border-blue-500 focus:ring-4 focus:ring-blue-500/10 transition-all font-medium text-slate-800 placeholder-slate-400 resize-y" placeholder="How can we help you?"></textarea>
                 </div>
-                <div>
-                  <button type="submit" className="w-full md:w-auto bg-blue-600 text-white font-bold py-4 px-10 rounded-xl hover:bg-blue-700 shadow-lg shadow-blue-600/20 active:scale-95 transition-all text-sm tracking-wide">
-                    SEND MESSAGE
-                  </button>
-                </div>
-              </form>
+              </ContactFormWrapper>
             </div>
             
             {/* Image / Banner */}
